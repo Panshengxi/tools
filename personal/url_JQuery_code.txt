@@ -1,0 +1,48 @@
+ //生成微信二维码
+  function xyqrcode(options) {
+    var settings = {
+      dom: '',
+      render: 'canvas',   //生成二维码的格式还有image、div
+      ecLevel: "H",
+      text: "",
+      background: "#ffffff",
+      fill: "#333333", //二维码纹路的颜色
+      fontcolor: "#ff9818",
+      fontname: "Ubuntu",
+      image: {},
+      label: "",
+      mPosX: 0.5,   //图片在X轴的位置
+      mPosY: 0.5,    //图片在X轴的位置
+      mSize: 0.27,   //图片大小
+      minVersion: 10,
+      mode: 4,
+      quiet: 1,
+      radius: 1,
+      size: 400
+    };
+    if (options) {
+      $.extend(settings, options);//options对象跟settings比较，相同的就替换，没有的就添加
+
+    }
+    if (settings.dom.length == 0) {
+      window.console.log("Error: dom empty!");
+      return;
+    }
+    if (settings.url.length == 0) {
+      window.console.log("Error: url empty!");
+      return;
+    }
+    settings.text = settings.url; //在qrcode生成二维码的地址是text。这里就把url赋值给text
+    $(settings.dom).qrcode(settings);
+
+  }
+
+  $(document).ready(function () {
+    var options = {};
+    options.url = 'http://gateway.66caip.com/information/nncp/v2.0/app/download?packName=com.niuniucaip.lotto&platform=android&channel=10000'; //二维码的链接
+    options.dom = "#code";//二维码生成的位置
+    options.image = $('#img-buffer');//图片id
+    // options.render="canvas";//设置生成的二维码是canvas格式，也有image、div格式
+    options.render = "image";//设置生成的二维码是canvas格式，也有image、div格式
+    xyqrcode(options);
+  });

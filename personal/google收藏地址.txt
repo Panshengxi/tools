@@ -1,0 +1,26 @@
+https://github.com/  	   github
+https://cn.vuejs.org/			vuejs	 
+https://zhuanlan.zhihu.com/		知乎
+https://www.baidu.com/		百度
+
+http://wiki.tankonline.cn/login.action?os_destination=%2Findex.action&permissionViolation=true 		wiki
+http://git.tankonline.cn/users/sign_in		项目地址
+http://project.niuniucaip.com/zentao/my/ 	禅道
+https://run.mockplus.cn/Ecngin7Bz4IBC1MJ/index.html 		PC原型
+https://run.mockplus.cn/uxIcNFMPb0HPNlMn/index.html			App原型
+https://www.processon.com/diagraming/5aff9db3e4b06a40445c8c22		流程图
+
+构建地址
+http://build.tankonline.cn/login
+qinbz
+qinbz123
+
+
+ui插件
+http://www.muse-ui.org/#/install 
+https://ionicframework.com/docs/
+https://www.iviewui.com/docs/guide/install
+http://element.eleme.io/#/zh-CN		
+http://mint-ui.github.io/docs/#/!/zh-cn  mint-ui
+http://dev.dcloud.net.cn/mui/ 		mui
+http://www.bootcss.com/ 	bootcss

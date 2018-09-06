@@ -1,0 +1,23 @@
+ <!--[if IE 9]>
+        <style>
+            .main > ul > li.item > .inner-item > .mobile,
+            .main > ul > li.item > .inner-item > .h5-img,
+            .main > ul > li.item-03.item > .inner-item > img{
+                opacity: 1;
+            }
+        </style>
+    <![endif]-->
+
+ /*¼æÈİielä¯ÀÀÆ÷Date*/
+        new_date:function (str) {
+            if(!str){
+                return 0;
+            }
+            arr=str.split(" ");
+            d=arr[0].split("-");
+            t=arr[1].split(":");
+            var date = new Date();
+            date.setUTCFullYear(d[0], d[1] - 1, d[2]);
+            date.setUTCHours(t[0], t[1], t[2], 0);
+            return date;
+        },

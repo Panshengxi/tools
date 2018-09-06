@@ -1,0 +1,1 @@
+  this.$set(this.$data, 'selectHash', Object.assign({}, this.selectHash));

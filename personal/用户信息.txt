@@ -1,0 +1,6 @@
+ ìøµÀ£º
+	username: pansx123
+	pass: Pansx123
+git 	
+	username: pansx
+	pass:pan123PAN

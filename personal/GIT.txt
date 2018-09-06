@@ -1,0 +1,24 @@
+一、创建与合并分支
+	1 	创建分支
+		git checkout -b 分支名
+		
+	2	回到主分支（master）
+		git checkout master 
+		
+	3	合并分支
+		git merge 分支名
+	
+	4	删除分支
+		git branch -d 分支名
+		
+		
+二、回滚到指定的版本
+
+	git reset --hard 版本号
+	
+	
+三、
+	（退出git log 状态：英文状态下按Q）
+	git log -p -2 //显示最新的2条提交的日记，-p表示差异
+	
+	git log --pretty=format:"%h - %an, %ar : %s" //%h表示提交对象的简短哈希字串，%an 表示作者的名字 ,%s表示提交说明

@@ -1,0 +1,23 @@
+1、建立文件夹
+	在我们c:/mongodb_datas 下面建立文件夹 server_log ，然后在server_log下面建立一个 mongodb.log
+	
+2、利用管理员身份打开终端,运行
+	mongod.exe --bind_ip 127.0.0.1 --logpath "C:/mongodb_datas/server_log/mongodb.log" --logappend --dbpath "c:/mongodb_datas" --port 27017 --serviceName "MongoDBServer" --serviceDisplayName "MongoDBServerDisplayName" --install
+	
+3、在任务管理中找到，MongoDBService服务，启动它
+
+
+32位：
+	mongod --dbpath c:/mongodb_datas --journal  --storageEngine=mmapv1
+
+64位运行
+		
+mongod.exe --bind_ip 127.0.0.1 --logpath "C:/mongodb_datas/server_log/mongodb.log" --logappend --dbpath "c:/mongodb_datas" --port 27017 --serviceName "MongoDBServer" --serviceDisplayName "MongoDBServerDisplayName" --install
+				
+32位
+
+mongod.exe --bind_ip 127.0.0.1 --logpath "C:/mongodb_datas/server_log/mongodb.log" --logappend --dbpath "c:/mongodb_datas" --journal --storageEngine=mmapv1  --port 27017 --serviceName "MongoDBServer" --serviceDisplayName "MongoDBServerDisplayName" --install
+
+
+//删除启动项
+sc delete MongoDBServer

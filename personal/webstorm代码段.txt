@@ -1,0 +1,18 @@
+document.getElementsByClassName('$i$');
+document.getElementById('$i$');
+document.getElementsByTagName('$i$');
+for (var i = 0; i < $a$; i++){
+    $end$
+};
+for (var j = 0; j < $a$; j++){
+    $end$
+};
+for (var key in $i$) {
+    $i$[key] = $end$
+};
+function $i$($j$){
+    $end$
+}
+onmousemove
+onmouseover
+onmouseout

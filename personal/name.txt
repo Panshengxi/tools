@@ -1,0 +1,25 @@
+﻿checkId_card:function (){
+            var idcard = this.userInfo.idcard;
+            var checkFlag = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(X|x)$)/.test(idcard);
+            if (!checkFlag){
+                this.showError('身份证格式错误');
+            }else {
+                this.hideError();
+            }
+            return checkFlag;
+        },
+
+        checkName:function () {
+            var userName = this.userInfo.realname;
+            var checkFlag = /^[\u4e00-\u9fa5]{2,15}$/.test(userName);
+            if (!checkFlag){
+                this.showError('请输入正确名字');
+            }else {
+                this.hideError();
+            }
+            return checkFlag;
+        }
+		
+		
+		
+		
